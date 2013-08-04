@@ -1,0 +1,200 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		D21C33290DB7625900100120 /* types.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		D24C538B0DB7F58D00856964 /* marble.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = marble.c; sourceTree = "<group>"; };
+		D24C538C0DB7F58D00856964 /* olipik.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = olipik.c; sourceTree = "<group>"; };
+		D24C538D0DB7F5A000856964 /* marble.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = marble.h; sourceTree = "<group>"; };
+		D24C538E0DB7F5A000856964 /* olipik.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = olipik.h; sourceTree = "<group>"; };
+		D29AC0920DB1550F00E10431 /* dma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = dma.h; sourceTree = "<group>"; };
+		D29AC0930DB1550F00E10431 /* input.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		D29AC0940DB1550F00E10431 /* register.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = register.h; sourceTree = "<group>"; };
+		D29AC0950DB1550F00E10431 /* video.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		D29AC0970DB1552900E10431 /* dma.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = dma.c; sourceTree = "<group>"; };
+		D29AC0980DB1552900E10431 /* input.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		D29AC0990DB1552900E10431 /* video.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = video.c; sourceTree = "<group>"; };
+		D29AC09C0DB1553B00E10431 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = source/main.c; sourceTree = "<group>"; };
+		D29AC0F30DB159FD00E10431 /* sprite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = sprite.h; sourceTree = "<group>"; };
+		D2A622690DB2F7A500949196 /* world.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = world.h; sourceTree = "<group>"; };
+		D2A6226B0DB2F7DD00949196 /* world.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = world.c; sourceTree = "<group>"; };
+		D2A6227F0DB300A700949196 /* pikminSplash2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pikminSplash2.c; sourceTree = "<group>"; };
+		D2A622800DB300B400949196 /* pikminSplash2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pikminSplash2.h; sourceTree = "<group>"; };
+		D2A67B8D0DB5643D00F715FA /* sound.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
+		D2A67B950DB5646800F715FA /* timer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		D2A67BD60DB569E200F715FA /* interrupts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = interrupts.h; sourceTree = "<group>"; };
+		D2A67C020DB56C3500F715FA /* up.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = up.c; sourceTree = "<group>"; };
+		D2A67C030DB56C4100F715FA /* up.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = up.h; sourceTree = "<group>"; };
+		D2AB02D00DB16F3B003CA50A /* pikminS1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pikminS1.c; sourceTree = "<group>"; };
+		D2AB02D10DB16F44003CA50A /* sprite.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sprite.c; sourceTree = "<group>"; };
+		D2AB02D20DB16F51003CA50A /* pikminS1.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pikminS1.h; sourceTree = "<group>"; };
+		D2AB02DB0DB171B4003CA50A /* gametable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gametable.h; sourceTree = "<group>"; };
+		D2AB02E10DB17399003CA50A /* gametable.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gametable.c; sourceTree = "<group>"; };
+		D2AB03880DB18B61003CA50A /* test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = test.h; path = include/test.h; sourceTree = "<group>"; };
+		D2AB03890DB18B6D003CA50A /* test.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = test.c; path = source/test.c; sourceTree = "<group>"; };
+		D2B67CAC0DB43E180002B514 /* pathfinding.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pathfinding.h; sourceTree = "<group>"; };
+		D2B67CAF0DB43E9C0002B514 /* pathfinding.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pathfinding.c; sourceTree = "<group>"; };
+		D2D935C10DB8AD2C0091AF74 /* tmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmap.h; sourceTree = "<group>"; };
+		D2D935C20DB8AD3B0091AF74 /* tmap.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = tmap.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D29AC0790DB1541E00E10431 = {
+			isa = PBXGroup;
+			children = (
+				D2AB03890DB18B6D003CA50A /* test.c */,
+				D2AB03880DB18B61003CA50A /* test.h */,
+				D29AC0960DB1552900E10431 /* source */,
+				D29AC0910DB1550F00E10431 /* include */,
+				D29AC09C0DB1553B00E10431 /* main.c */,
+			);
+			sourceTree = "<group>";
+		};
+		D29AC0910DB1550F00E10431 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D2D935C10DB8AD2C0091AF74 /* tmap.h */,
+				D24C538D0DB7F5A000856964 /* marble.h */,
+				D24C538E0DB7F5A000856964 /* olipik.h */,
+				D2A67C030DB56C4100F715FA /* up.h */,
+				D21C33290DB7625900100120 /* types.h */,
+				D2A622800DB300B400949196 /* pikminSplash2.h */,
+				D2A622690DB2F7A500949196 /* world.h */,
+				D2AB02D20DB16F51003CA50A /* pikminS1.h */,
+				D29AC0920DB1550F00E10431 /* dma.h */,
+				D29AC0930DB1550F00E10431 /* input.h */,
+				D29AC0940DB1550F00E10431 /* register.h */,
+				D29AC0950DB1550F00E10431 /* video.h */,
+				D2AB02DB0DB171B4003CA50A /* gametable.h */,
+				D29AC0F30DB159FD00E10431 /* sprite.h */,
+				D2A67B8D0DB5643D00F715FA /* sound.h */,
+				D2A67B950DB5646800F715FA /* timer.h */,
+				D2B67CAC0DB43E180002B514 /* pathfinding.h */,
+				D2A67BD60DB569E200F715FA /* interrupts.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D29AC0960DB1552900E10431 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				D2D935C20DB8AD3B0091AF74 /* tmap.c */,
+				D24C538B0DB7F58D00856964 /* marble.c */,
+				D24C538C0DB7F58D00856964 /* olipik.c */,
+				D2A67C020DB56C3500F715FA /* up.c */,
+				D2A6227F0DB300A700949196 /* pikminSplash2.c */,
+				D2A6226B0DB2F7DD00949196 /* world.c */,
+				D2AB02D10DB16F44003CA50A /* sprite.c */,
+				D2AB02D00DB16F3B003CA50A /* pikminS1.c */,
+				D29AC0970DB1552900E10431 /* dma.c */,
+				D29AC0980DB1552900E10431 /* input.c */,
+				D29AC0990DB1552900E10431 /* video.c */,
+				D2AB02E10DB17399003CA50A /* gametable.c */,
+				D2B67CAF0DB43E9C0002B514 /* pathfinding.c */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D29AC0860DB1543B00E10431 /* ARMG */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D29AC08E0DB1545900E10431 /* Build configuration list for PBXLegacyTarget "ARMG" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /users/Beege/sprites;
+			dependencies = (
+			);
+			name = ARMG;
+			passBuildSettingsInEnvironment = 1;
+			productName = ARMG;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		D29AC07B0DB1541E00E10431 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D29AC07C0DB1541E00E10431 /* Build configuration list for PBXProject "sprites" */;
+			hasScannedForEncodings = 0;
+			mainGroup = D29AC0790DB1541E00E10431;
+			projectDirPath = "";
+			targets = (
+				D29AC0860DB1543B00E10431 /* ARMG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D29AC07D0DB1541E00E10431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEVKITARM = /opt/local/devkitPro/devkitARM;
+				DEVKITPRO = /opt/local/devkitPro;
+			};
+			name = Debug;
+		};
+		D29AC07E0DB1541E00E10431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVKITARM = /opt/local/devkitPro/devkitARM;
+				DEVKITPRO = /opt/local/devkitPro;
+			};
+			name = Release;
+		};
+		D29AC08F0DB1545900E10431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = ARMG;
+			};
+			name = Debug;
+		};
+		D29AC0900DB1545900E10431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = ARMG;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D29AC07C0DB1541E00E10431 /* Build configuration list for PBXProject "sprites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29AC07D0DB1541E00E10431 /* Debug */,
+				D29AC07E0DB1541E00E10431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29AC08E0DB1545900E10431 /* Build configuration list for PBXLegacyTarget "ARMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29AC08F0DB1545900E10431 /* Debug */,
+				D29AC0900DB1545900E10431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D29AC07B0DB1541E00E10431 /* Project object */;
+}

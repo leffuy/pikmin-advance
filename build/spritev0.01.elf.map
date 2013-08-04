@@ -1,0 +1,1113 @@
+Archive member included because of file (symbol)
+
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+                              main.o (__aeabi_idiv)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+                              c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o) (__div0)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+                              c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o (_call_via_r3)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+                              pathfinding.o (__aeabi_dadd)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+                              pathfinding.o (__aeabi_d2iz)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+                              c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o (__libc_init_array)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+                              main.o (memcpy)
+c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+                              c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o (fake_heap_end)
+
+Allocating common symbols
+Common symbol       size              file
+
+pikminTL            0x6c              main.o
+bPikmin             0x6c              main.o
+keysNow             0x2               input.o
+samplePositionB     0x2               main.o
+gameTable           0x10              main.o
+numVblanksA         0x2               main.o
+cObject             0x6c              main.o
+numVblanksB         0x2               main.o
+olimarL             0x6c              main.o
+testpath            0x20              main.o
+dObject             0x6c              main.o
+aOlimar             0x6c              main.o
+keysThen            0x2               input.o
+aObject             0x6c              main.o
+table               0x2f4             main.o
+bObject             0x6c              main.o
+sampleLengthB       0x2               main.o
+aPikmin             0x6c              main.o
+olimarR             0x6c              main.o
+path3               0x20              main.o
+sampleRateB         0x2               main.o
+pikminB             0x6c              main.o
+pathTable           0xc               main.o
+sampleLengthA       0x2               main.o
+pikminR             0x6c              main.o
+sampleRateA         0x2               main.o
+olimarF             0x6c              main.o
+pikminTR            0x6c              main.o
+pikminL             0x6c              main.o
+pikminF             0x6c              main.o
+path2               0x20              main.o
+olimarB             0x6c              main.o
+nokey               0x4               main.o
+testpal             0x14              main.o
+curPal              0x4               main.o
+samplePositionA     0x2               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x02000000
+iwram            0x03000000         0x00008000
+ewram            0x02000000         0x00040000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x08000000                __text_start = 0x8000000
+                0x02040000                __eheap_end = 0x2040000
+                0x03000000                __iwram_start = 0x3000000
+                0x03008000                __iwram_top = 0x3008000
+                0x03007fa0                __sp_irq = (__iwram_top - 0x60)
+                0x03007f00                __sp_usr = (__sp_irq - 0xa0)
+                0x03007ff8                __irq_flags = 0x3007ff8
+                0x08000000                . = __text_start
+
+.init           0x08000000      0x218
+ *(.init)
+ .init          0x08000000      0x20c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+                0x080000c4                __boot_method
+                0x080000c5                __slave_number
+                0x08000000                _start
+                0x080000e0                start_vector
+ .init          0x0800020c        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+                0x0800020c                _init
+ .init          0x08000210        0x8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+                0x08000218                . = ALIGN (0x4)
+
+.plt            0x08000218        0x0
+ *(.plt)
+                0x08000218                . = ALIGN (0x4)
+
+.text           0x08000218     0x2bf0
+ *(EXCLUDE_FILE(*.iwram*) .text)
+ .text          0x08000218        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .text          0x08000218        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .text          0x08000218       0x70 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .text          0x08000288        0x0 Dismiss.o
+ .text          0x08000288        0x0 Pikmin2.o
+ .text          0x08000288        0x0 Throw.o
+ .text          0x08000288        0x0 Whistle.o
+ .text          0x08000288        0x0 end.o
+ .text          0x08000288        0x0 forest.o
+ .text          0x08000288        0x0 pik22.o
+ .text          0x08000288        0x0 piklvl01.o
+ .text          0x08000288        0x0 blend.o
+ .text          0x08000288       0x24 dma.o
+                0x08000288                dmaTransfer
+ .text          0x080002ac        0x0 endGame.o
+ .text          0x080002ac       0x2c gametable.o
+                0x080002ac                processGame
+ .text          0x080002d8       0x58 input.o
+                0x08000318                keysReleased
+                0x080002f8                keysHeld
+                0x08000304                keysPressed
+                0x080002d8                scanKeys
+ .text          0x08000330        0x0 level1.o
+ .text          0x08000330        0x0 level1a.o
+ .text          0x08000330     0x1e98 main.o
+                0x080008cc                updatePikminDist
+                0x080006fc                playBSound
+                0x0800104c                gameEnd
+                0x08000a44                called
+                0x0800034c                olimarCall
+                0x08000a14                stay
+                0x08000804                stopSound
+                0x08000968                pikminThrow
+                0x08001cfc                gameMain
+                0x08000358                olimarStay
+                0x080006b4                calibratePikmin
+                0x08000fa8                userInputSplash
+                0x08001adc                processPikmin
+                0x08000830                splashes
+                0x08000370                findPikminScreen
+                0x080003dc                pikminReturn
+                0x08000330                resetVars
+                0x08000fc8                gameSplash
+                0x08001854                pikminFollow
+                0x08000780                playASound
+                0x08000d90                render
+                0x080020f4                pikminIdle
+                0x08000364                olimarThrow
+                0x080020dc                main
+                0x08001130                thrown
+                0x08000614                interruptHandler
+                0x080015b4                pikminMove
+                0x08000898                adjustPikminThrow
+                0x080011cc                userInputMain
+                0x08000a74                gameInit
+ .text          0x080021c8        0x0 marble.o
+ .text          0x080021c8        0x0 olipik.o
+ .text          0x080021c8       0x88 pathfinding.o
+                0x080021c8                aStar
+ .text          0x08002250        0x0 pikminS1.o
+ .text          0x08002250        0x0 pikminSplash2.o
+ .text          0x08002250      0x14c sprite.o
+                0x08002250                shiftState
+                0x08002264                placeIntoBuffer
+                0x080022b8                buildOAM
+                0x08002290                checkCycles
+                0x080022e8                streamBuffer
+ .text          0x0800239c        0x0 test.o
+ .text          0x0800239c        0x0 tmap.o
+ .text          0x0800239c        0x0 up.o
+ .text          0x0800239c       0x1c video.o
+                0x0800239c                waitForVBlank
+ .text          0x080023b8      0x3f8 world.o
+                0x08002768                checkUpCol
+                0x080025ec                checkYSides
+                0x080025c8                checkXSides
+                0x08002618                checkCollision
+                0x080023b8                changePalSet
+                0x0800270c                checkLtCol
+                0x08002608                findInc
+                0x080026c0                checkDnCol
+                0x08002664                checkRtCol
+ .text          0x080027b0       0xa4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+                0x080027b0                __aeabi_idiv
+                0x080027b0                __divsi3
+                0x08002844                __aeabi_idivmod
+ .text          0x08002854        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+                0x08002854                __aeabi_ldiv0
+                0x08002854                __div0
+                0x08002854                __aeabi_idiv0
+ .text          0x08002858       0x3c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+                0x08002860                _call_via_r2
+                0x08002870                _call_via_r6
+                0x0800286c                _call_via_r5
+                0x08002864                _call_via_r3
+                0x08002884                _call_via_fp
+                0x08002878                _call_via_r8
+                0x08002874                _call_via_r7
+                0x08002858                _call_via_r0
+                0x08002880                _call_via_sl
+                0x0800288c                _call_via_sp
+                0x0800287c                _call_via_r9
+                0x08002868                _call_via_r4
+                0x0800285c                _call_via_r1
+                0x08002888                _call_via_ip
+                0x08002890                _call_via_lr
+ .text          0x08002894      0x41c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+                0x08002c50                __floatdidf
+                0x08002bd4                __floatsidf
+                0x08002bb0                __aeabi_ui2d
+                0x08002894                __aeabi_drsub
+                0x08002bfc                __extendsfdf2
+                0x080028a0                __adddf3
+                0x08002bb0                __floatunsidf
+                0x080028a0                __aeabi_dadd
+                0x08002c3c                __aeabi_ul2d
+                0x0800289c                __aeabi_dsub
+                0x08002c3c                __floatundidf
+                0x08002bd4                __aeabi_i2d
+                0x08002c50                __aeabi_l2d
+                0x08002bfc                __aeabi_f2d
+                0x0800289c                __subdf3
+ .text          0x08002cb0       0x5c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+                0x08002cb0                __fixdfsi
+                0x08002cb0                __aeabi_d2iz
+ .text          0x08002d0c       0x88 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+                0x08002d3c                __libc_init_array
+                0x08002d0c                __libc_fini_array
+ .text          0x08002d94       0x5c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+                0x08002d94                memcpy
+ .text          0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .text          0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+ .text          0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+ *(.text.*)
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.glue_7)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .glue_7        0x08002df0        0x0 Dismiss.o
+ .glue_7        0x08002df0        0x0 Pikmin2.o
+ .glue_7        0x08002df0        0x0 Throw.o
+ .glue_7        0x08002df0        0x0 Whistle.o
+ .glue_7        0x08002df0        0x0 end.o
+ .glue_7        0x08002df0        0x0 forest.o
+ .glue_7        0x08002df0        0x0 pik22.o
+ .glue_7        0x08002df0        0x0 piklvl01.o
+ .glue_7        0x08002df0        0x0 blend.o
+ .glue_7        0x08002df0        0x0 dma.o
+ .glue_7        0x08002df0        0x0 endGame.o
+ .glue_7        0x08002df0        0x0 gametable.o
+ .glue_7        0x08002df0        0x0 input.o
+ .glue_7        0x08002df0        0x0 level1.o
+ .glue_7        0x08002df0        0x0 level1a.o
+ .glue_7        0x08002df0        0x0 main.o
+ .glue_7        0x08002df0        0x0 marble.o
+ .glue_7        0x08002df0        0x0 olipik.o
+ .glue_7        0x08002df0        0x0 pathfinding.o
+ .glue_7        0x08002df0        0x0 pikminS1.o
+ .glue_7        0x08002df0        0x0 pikminSplash2.o
+ .glue_7        0x08002df0        0x0 sprite.o
+ .glue_7        0x08002df0        0x0 test.o
+ .glue_7        0x08002df0        0x0 tmap.o
+ .glue_7        0x08002df0        0x0 up.o
+ .glue_7        0x08002df0        0x0 video.o
+ .glue_7        0x08002df0        0x0 world.o
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+ .glue_7        0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+ *(.glue_7t)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .glue_7t       0x08002df0        0x0 Dismiss.o
+ .glue_7t       0x08002df0        0x0 Pikmin2.o
+ .glue_7t       0x08002df0        0x0 Throw.o
+ .glue_7t       0x08002df0        0x0 Whistle.o
+ .glue_7t       0x08002df0        0x0 end.o
+ .glue_7t       0x08002df0        0x0 forest.o
+ .glue_7t       0x08002df0        0x0 pik22.o
+ .glue_7t       0x08002df0        0x0 piklvl01.o
+ .glue_7t       0x08002df0        0x0 blend.o
+ .glue_7t       0x08002df0        0x0 dma.o
+ .glue_7t       0x08002df0        0x0 endGame.o
+ .glue_7t       0x08002df0        0x0 gametable.o
+ .glue_7t       0x08002df0        0x0 input.o
+ .glue_7t       0x08002df0        0x0 level1.o
+ .glue_7t       0x08002df0        0x0 level1a.o
+ .glue_7t       0x08002df0        0x0 main.o
+ .glue_7t       0x08002df0        0x0 marble.o
+ .glue_7t       0x08002df0        0x0 olipik.o
+ .glue_7t       0x08002df0        0x0 pathfinding.o
+ .glue_7t       0x08002df0        0x0 pikminS1.o
+ .glue_7t       0x08002df0        0x0 pikminSplash2.o
+ .glue_7t       0x08002df0        0x0 sprite.o
+ .glue_7t       0x08002df0        0x0 test.o
+ .glue_7t       0x08002df0        0x0 tmap.o
+ .glue_7t       0x08002df0        0x0 up.o
+ .glue_7t       0x08002df0        0x0 video.o
+ .glue_7t       0x08002df0        0x0 world.o
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .glue_7t       0x08002df0        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .glue_7t       0x08002df0       0x18 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+                0x08002dfc                ____aeabi_dadd_change_to_arm
+                0x08002df0                ____aeabi_i2d_from_thumb
+                0x08002e00                ____aeabi_d2iz_from_thumb
+                0x08002df4                ____aeabi_i2d_change_to_arm
+                0x08002df8                ____aeabi_dadd_from_thumb
+                0x08002e04                ____aeabi_d2iz_change_to_arm
+ .glue_7t       0x08002e08        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+                0x08002e08                . = ALIGN (0x4)
+                0x08002e08                __text_end = .
+
+.fini           0x08002e08        0xc
+ *(.fini)
+ .fini          0x08002e08        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+                0x08002e08                _fini
+ .fini          0x08002e0c        0x8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+                0x08002e14                . = ALIGN (0x4)
+
+.rodata         0x08002e14   0x98de70
+ *(.rodata)
+ .rodata        0x08002e14     0x4584 Dismiss.o
+                0x08002e14                Dismiss_bin_size
+                0x08007398                Dismiss_bin_end
+                0x08002e18                Dismiss_bin
+ .rodata        0x08007398    0x47104 Pikmin2.o
+                0x0800739c                Pikmin2_bin
+                0x08007398                Pikmin2_bin_size
+                0x0804e49c                Pikmin2_bin_end
+ .rodata        0x0804e49c     0x41e4 Throw.o
+                0x0804e49c                Throw_bin_size
+                0x08052680                Throw_bin_end
+                0x0804e4a0                Throw_bin
+ .rodata        0x08052680     0x6334 Whistle.o
+                0x080589b4                Whistle_bin_end
+                0x08052684                Whistle_bin
+                0x08052680                Whistle_bin_size
+ .rodata        0x080589b4    0x4d114 end.o
+                0x080589b4                end_bin_size
+                0x080a5ac8                end_bin_end
+                0x080589b8                end_bin
+ .rodata        0x080a5ac8   0x39a014 forest.o
+                0x080a5acc                forest_bin
+                0x080a5ac8                forest_bin_size
+                0x0843fadc                forest_bin_end
+ .rodata        0x0843fadc     0x6814 pik22.o
+                0x0843fadc                pik22_bin_size
+                0x0843fae0                pik22_bin
+                0x084462f0                pik22_bin_end
+ .rodata        0x084462f0   0x432f14 piklvl01.o
+                0x084462f0                piklvl01_bin_size
+                0x08879204                piklvl01_bin_end
+                0x084462f4                piklvl01_bin
+ .rodata        0x08879204      0x880 blend.o
+                0x08879284                blendMap
+                0x08879204                blendTiles
+ .rodata        0x08879a84    0x12c00 endGame.o
+                0x08879a84                endGameBitmap
+ .rodata        0x0888c684     0xf820 level1.o
+                0x0888c684                level1Pal
+                0x08899ea4                level1Map
+                0x0888c884                level1Tiles
+ .rodata        0x0889bea4    0x10a00 level1a.o
+                0x0889bea4                level1aPal
+                0x0889c0a4                level1aTiles
+                0x088ac0a4                level1aMap
+ .rodata        0x088ac8a4     0xdac0 marble.o
+                0x088ac8a4                marblePal
+                0x088acaa4                marbleTiles
+                0x088b8364                marbleMap
+ .rodata        0x088ba364    0x35200 olipik.o
+                0x088ba564                olipikTiles
+                0x088ba364                olipikPal
+ .rodata        0x088ef564     0x9200 pikminS1.o
+                0x088ef564                pikminS1Pal
+                0x088ef764                pikminS1Tiles
+ .rodata        0x088f8764    0x12c00 pikminSplash2.o
+                0x088f8764                pikminSplash2Bitmap
+ .rodata        0x0890b364     0x1200 test.o
+                0x0890b564                testTiles
+                0x0890b364                testPal
+ .rodata        0x0890c564    0x80000 tmap.o
+                0x0890c564                tmapBitmap
+ .rodata        0x0898c564     0x4720 up.o
+                0x0898c564                up
+ *all.rodata*(*)
+ *(.roda)
+ *(.rodata.*)
+ *(.gnu.linkonce.r*)
+                0x08990c84                . = ALIGN (0x4)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08990c84                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08990c84                __exidx_end = .
+
+.ctors          0x08990c84        0x0
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x08990c84                . = ALIGN (0x4)
+
+.dtors          0x08990c84        0x0
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x08990c84                . = ALIGN (0x4)
+
+.eh_frame       0x08990c84        0x4
+ *(.eh_frame)
+ .eh_frame      0x08990c84        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .eh_frame      0x08990c84        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+                0x08990c88                . = ALIGN (0x4)
+
+.gcc_except_table
+                0x08990c88        0x0
+ *(.gcc_except_table)
+                0x08990c88                . = ALIGN (0x4)
+                0x08990c88                __iwram_lma = .
+
+.iwram          0x03000000        0x0 load address 0x08990c88
+                0x03000000                __iwram_start = <code 342> (.)
+ *(.iwram)
+ *iwram.*(.text)
+                0x03000000                . = ALIGN (0x4)
+                0x03000000                __iwram_end = <code 342> (.)
+                0x08990c88                __data_lma = (__iwram_lma + SIZEOF (.iwram))
+
+.bss            0x03000000      0xb70
+                0x03000000                __bss_start = <code 342> (.)
+                0x03000000                __bss_start__ = <code 342> (.)
+ *(.dynbss)
+ *(.gnu.linkonce.b*)
+ *(.bss*)
+ .bss           0x03000000        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .bss           0x03000000        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .bss           0x03000000       0x1c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .bss           0x0300001c        0x0 Dismiss.o
+ .bss           0x0300001c        0x0 Pikmin2.o
+ .bss           0x0300001c        0x0 Throw.o
+ .bss           0x0300001c        0x0 Whistle.o
+ .bss           0x0300001c        0x0 end.o
+ .bss           0x0300001c        0x0 forest.o
+ .bss           0x0300001c        0x0 pik22.o
+ .bss           0x0300001c        0x0 piklvl01.o
+ .bss           0x0300001c        0x0 blend.o
+ .bss           0x0300001c        0x0 dma.o
+ .bss           0x0300001c        0x0 endGame.o
+ .bss           0x0300001c        0x0 gametable.o
+ .bss           0x0300001c        0x0 input.o
+ .bss           0x0300001c        0x0 level1.o
+ .bss           0x0300001c        0x0 level1a.o
+ .bss           0x0300001c       0x68 main.o
+                0x03000048                cycleRestart
+                0x03000040                staying
+                0x03000020                gdX
+                0x03000038                pikV
+                0x03000028                wTime
+                0x03000024                gdY
+                0x0300001c                airtime
+                0x0300003c                calling
+                0x03000044                throwing
+                0x03000034                pikH
+                0x0300002c                vOff
+                0x03000030                hOff
+ .bss           0x03000084        0x0 marble.o
+ .bss           0x03000084        0x0 olipik.o
+ .bss           0x03000084        0x0 pathfinding.o
+ .bss           0x03000084        0x0 pikminS1.o
+ .bss           0x03000084        0x0 pikminSplash2.o
+ .bss           0x03000084        0x0 sprite.o
+ .bss           0x03000084        0x0 test.o
+ .bss           0x03000084        0x0 tmap.o
+ .bss           0x03000084        0x0 up.o
+ .bss           0x03000084        0x0 video.o
+ .bss           0x03000084        0x8 world.o
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .bss           0x0300008c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .bss           0x0300008c        0x8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+                0x03000090                fake_heap_start
+                0x0300008c                fake_heap_end
+ .bss           0x03000094        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+ .bss           0x03000094        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+ *(COMMON)
+ COMMON         0x03000094        0x4 input.o
+                0x03000094                keysNow
+                0x03000096                keysThen
+ COMMON         0x03000098      0xad6 main.o
+                0x03000098                pikminTL
+                0x03000104                bPikmin
+                0x03000170                samplePositionB
+                0x03000174                gameTable
+                0x03000184                numVblanksA
+                0x03000188                cObject
+                0x030001f4                numVblanksB
+                0x030001f8                olimarL
+                0x03000264                testpath
+                0x03000284                dObject
+                0x030002f0                aOlimar
+                0x0300035c                aObject
+                0x030003c8                table
+                0x030006bc                bObject
+                0x03000728                sampleLengthB
+                0x0300072c                aPikmin
+                0x03000798                olimarR
+                0x03000804                path3
+                0x03000824                sampleRateB
+                0x03000828                pikminB
+                0x03000894                pathTable
+                0x030008a0                sampleLengthA
+                0x030008a4                pikminR
+                0x03000910                sampleRateA
+                0x03000914                olimarF
+                0x03000980                pikminTR
+                0x030009ec                pikminL
+                0x03000a58                pikminF
+                0x03000ac4                path2
+                0x03000ae4                olimarB
+                0x03000b50                nokey
+                0x03000b54                testpal
+                0x03000b68                curPal
+                0x03000b6c                samplePositionA
+                0x03000b70                . = ALIGN (0x4)
+ *fill*         0x03000b6e        0x2 00
+                0x03000b70                __bss_end = <code 342> (.)
+                0x03000b70                __bss_end__ = __bss_end
+
+.data           0x03000b70       0x1c load address 0x08990c88
+                0x03000b70                __data_start = <code 342> (.)
+ *(.data)
+ .data          0x03000b70        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .data          0x03000b70        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .data          0x03000b70        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+                0x03000b70                __dso_handle
+ .data          0x03000b74        0x0 Dismiss.o
+ .data          0x03000b74        0x0 Pikmin2.o
+ .data          0x03000b74        0x0 Throw.o
+ .data          0x03000b74        0x0 Whistle.o
+ .data          0x03000b74        0x0 end.o
+ .data          0x03000b74        0x0 forest.o
+ .data          0x03000b74        0x0 pik22.o
+ .data          0x03000b74        0x0 piklvl01.o
+ .data          0x03000b74        0x0 blend.o
+ .data          0x03000b74        0x0 dma.o
+ .data          0x03000b74        0x0 endGame.o
+ .data          0x03000b74        0x0 gametable.o
+ .data          0x03000b74        0x0 input.o
+ .data          0x03000b74        0x0 level1.o
+ .data          0x03000b74        0x0 level1a.o
+ .data          0x03000b74       0x18 main.o
+                0x03000b80                tempOAM
+                0x03000b7c                sprMap
+                0x03000b74                start
+                0x03000b78                firstTime
+ .data          0x03000b8c        0x0 marble.o
+ .data          0x03000b8c        0x0 olipik.o
+ .data          0x03000b8c        0x0 pathfinding.o
+ .data          0x03000b8c        0x0 pikminS1.o
+ .data          0x03000b8c        0x0 pikminSplash2.o
+ .data          0x03000b8c        0x0 sprite.o
+ .data          0x03000b8c        0x0 test.o
+ .data          0x03000b8c        0x0 tmap.o
+ .data          0x03000b8c        0x0 up.o
+ .data          0x03000b8c        0x0 video.o
+ .data          0x03000b8c        0x0 world.o
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+ .data          0x03000b8c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x03000b8c                . = ALIGN (0x4)
+                0x08990ca4                __preinit_lma = (__data_lma + SIZEOF (.data))
+                0x03000b8c                PROVIDE (__preinit_array_start, .)
+
+.preinit_array  0x03000b8c        0x0 load address 0x08990ca4
+ *(.preinit_array)
+                0x03000b8c                PROVIDE (__preinit_array_end, .)
+                0x08990ca4                __init_lma = (__preinit_lma + SIZEOF (.preinit_array))
+                0x03000b8c                PROVIDE (__init_array_start, .)
+
+.init_array     0x03000b8c        0x4 load address 0x08990ca4
+ *(.init_array)
+ .init_array    0x03000b8c        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+                0x03000b90                PROVIDE (__init_array_end, .)
+                0x03000b90                PROVIDE (__fini_array_start, .)
+                0x08990ca8                __fini_lma = (__init_lma + SIZEOF (.init_array))
+
+.fini_array     0x03000b90        0x4 load address 0x08990ca8
+ *(.fini_array)
+ .fini_array    0x03000b90        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+                0x03000b94                PROVIDE (__fini_array_end, .)
+                0x08990cac                __jcr_lma = (__fini_lma + SIZEOF (.fini_array))
+
+.jcr            0x03000b94        0x4 load address 0x08990cac
+ *(.jcr)
+ .jcr           0x03000b94        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .jcr           0x03000b94        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+                0x03000b98                __data_end = <code 342> (.)
+                0x08990cb0                __iwram_overlay_lma = (__jcr_lma + SIZEOF (.jcr))
+                0x03000b98                __iwram_overlay_start = .
+
+.iwram0         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram0)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram0 = LOADADDR (.iwram0)
+                0x08990cb0                __load_stop_iwram0 = (LOADADDR (.iwram0) + SIZEOF (.iwram0))
+
+.iwram1         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram1)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram1 = LOADADDR (.iwram1)
+                0x08990cb0                __load_stop_iwram1 = (LOADADDR (.iwram1) + SIZEOF (.iwram1))
+
+.iwram2         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram2)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram2 = LOADADDR (.iwram2)
+                0x08990cb0                __load_stop_iwram2 = (LOADADDR (.iwram2) + SIZEOF (.iwram2))
+
+.iwram3         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram3)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram3 = LOADADDR (.iwram3)
+                0x08990cb0                __load_stop_iwram3 = (LOADADDR (.iwram3) + SIZEOF (.iwram3))
+
+.iwram4         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram4)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram4 = LOADADDR (.iwram4)
+                0x08990cb0                __load_stop_iwram4 = (LOADADDR (.iwram4) + SIZEOF (.iwram4))
+
+.iwram5         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram5)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram5 = LOADADDR (.iwram5)
+                0x08990cb0                __load_stop_iwram5 = (LOADADDR (.iwram5) + SIZEOF (.iwram5))
+
+.iwram6         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram6)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram6 = LOADADDR (.iwram6)
+                0x08990cb0                __load_stop_iwram6 = (LOADADDR (.iwram6) + SIZEOF (.iwram6))
+
+.iwram7         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram7)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram7 = LOADADDR (.iwram7)
+                0x08990cb0                __load_stop_iwram7 = (LOADADDR (.iwram7) + SIZEOF (.iwram7))
+
+.iwram8         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram8)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram8 = LOADADDR (.iwram8)
+                0x08990cb0                __load_stop_iwram8 = (LOADADDR (.iwram8) + SIZEOF (.iwram8))
+
+.iwram9         0x03000b98        0x0 load address 0x08990cb0
+ *(.iwram9)
+                0x03000b98                . = ALIGN (0x4)
+                0x08990cb0                __load_start_iwram9 = LOADADDR (.iwram9)
+                0x08990cb0                __load_stop_iwram9 = (LOADADDR (.iwram9) + SIZEOF (.iwram9))
+                0x08990cb0                __ewram_lma = __load_stop_iwram9
+                0x03000b98                __iwram_overlay_end = .
+                0x03000b98                __iheap_start = .
+                0x02000000                __ewram_start = 0x2000000
+
+.ewram          0x02000000        0x0 load address 0x08990cb0
+ *(.ewram)
+                0x02000000                . = ALIGN (0x4)
+                0x08990cb0                __pad_lma = (__ewram_lma + SIZEOF (.ewram))
+
+.sbss           0x02000000        0x0
+                0x02000000                __sbss_start = <code 342> (.)
+ *(.sbss)
+                0x02000000                . = ALIGN (0x4)
+                0x02000000                __sbss_end = <code 342> (.)
+                0x02000000                __ewram_end = __sbss_end
+                0x02000000                __eheap_start = __sbss_end
+                0x02000000                __end__ = __sbss_end
+
+.pad            0x02000000        0x8 load address 0x08990cb0
+                0x02000000        0x4 LONG 0x52416b64
+                0x02000004        0x4 LONG 0x4d
+                0x02000008                . = ALIGN (0x4)
+                0x08990cb8                __rom_end__ = (__pad_lma + SIZEOF (.pad))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x3d8
+ *(.comment)
+ .comment       0x00000000       0x29 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .comment       0x00000029       0x29 blend.o
+ .comment       0x00000052       0x29 dma.o
+ .comment       0x0000007b       0x29 endGame.o
+ .comment       0x000000a4       0x29 gametable.o
+ .comment       0x000000cd       0x29 input.o
+ .comment       0x000000f6       0x29 level1.o
+ .comment       0x0000011f       0x29 level1a.o
+ .comment       0x00000148       0x29 main.o
+ .comment       0x00000171       0x29 marble.o
+ .comment       0x0000019a       0x29 olipik.o
+ .comment       0x000001c3       0x29 pathfinding.o
+ .comment       0x000001ec       0x29 pikminS1.o
+ .comment       0x00000215       0x29 pikminSplash2.o
+ .comment       0x0000023e       0x29 sprite.o
+ .comment       0x00000267       0x29 test.o
+ .comment       0x00000290       0x29 tmap.o
+ .comment       0x000002b9       0x29 up.o
+ .comment       0x000002e2       0x29 video.o
+ .comment       0x0000030b       0x29 world.o
+ .comment       0x00000334       0x29 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .comment       0x0000035d       0x29 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .comment       0x00000386       0x29 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .comment       0x000003af       0x29 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x100
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 dma.o
+ .debug_aranges
+                0x00000020       0x20 gametable.o
+ .debug_aranges
+                0x00000040       0x20 input.o
+ .debug_aranges
+                0x00000060       0x20 main.o
+ .debug_aranges
+                0x00000080       0x20 pathfinding.o
+ .debug_aranges
+                0x000000a0       0x20 sprite.o
+ .debug_aranges
+                0x000000c0       0x20 video.o
+ .debug_aranges
+                0x000000e0       0x20 world.o
+
+.debug_pubnames
+                0x00000000      0x858
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x2e blend.o
+ .debug_pubnames
+                0x0000002e       0x22 dma.o
+ .debug_pubnames
+                0x00000050       0x24 endGame.o
+ .debug_pubnames
+                0x00000074       0x22 gametable.o
+ .debug_pubnames
+                0x00000096       0x66 input.o
+ .debug_pubnames
+                0x000000fc       0x3e level1.o
+ .debug_pubnames
+                0x0000013a       0x41 level1a.o
+ .debug_pubnames
+                0x0000017b      0x46a main.o
+ .debug_pubnames
+                0x000005e5       0x3e marble.o
+ .debug_pubnames
+                0x00000623       0x30 olipik.o
+ .debug_pubnames
+                0x00000653       0x1c pathfinding.o
+ .debug_pubnames
+                0x0000066f       0x34 pikminS1.o
+ .debug_pubnames
+                0x000006a3       0x2a pikminSplash2.o
+ .debug_pubnames
+                0x000006cd       0x63 sprite.o
+ .debug_pubnames
+                0x00000730       0x2c test.o
+ .debug_pubnames
+                0x0000075c       0x21 tmap.o
+ .debug_pubnames
+                0x0000077d       0x19 up.o
+ .debug_pubnames
+                0x00000796       0x24 video.o
+ .debug_pubnames
+                0x000007ba       0x9e world.o
+
+.debug_info     0x00000000     0x27ec
+ *(.debug_info)
+ .debug_info    0x00000000       0x83 blend.o
+ .debug_info    0x00000083       0x9d dma.o
+ .debug_info    0x00000120       0x5c endGame.o
+ .debug_info    0x0000017c       0xa6 gametable.o
+ .debug_info    0x00000222       0xa9 input.o
+ .debug_info    0x000002cb       0xac level1.o
+ .debug_info    0x00000377       0xac level1a.o
+ .debug_info    0x00000423     0x1704 main.o
+ .debug_info    0x00001b27       0xac marble.o
+ .debug_info    0x00001bd3       0x85 olipik.o
+ .debug_info    0x00001c58       0xf3 pathfinding.o
+ .debug_info    0x00001d4b       0x83 pikminS1.o
+ .debug_info    0x00001dce       0x5c pikminSplash2.o
+ .debug_info    0x00001e2a      0x2fe sprite.o
+ .debug_info    0x00002128       0x83 test.o
+ .debug_info    0x000021ab       0x5e tmap.o
+ .debug_info    0x00002209       0x5b up.o
+ .debug_info    0x00002264       0x3b video.o
+ .debug_info    0x0000229f      0x54d world.o
+
+.debug_abbrev   0x00000000      0xad5
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x52 blend.o
+ .debug_abbrev  0x00000052       0x74 dma.o
+ .debug_abbrev  0x000000c6       0x49 endGame.o
+ .debug_abbrev  0x0000010f       0x77 gametable.o
+ .debug_abbrev  0x00000186       0x5c input.o
+ .debug_abbrev  0x000001e2       0x63 level1.o
+ .debug_abbrev  0x00000245       0x63 level1a.o
+ .debug_abbrev  0x000002a8      0x2f3 main.o
+ .debug_abbrev  0x0000059b       0x63 marble.o
+ .debug_abbrev  0x000005fe       0x52 olipik.o
+ .debug_abbrev  0x00000650       0xaf pathfinding.o
+ .debug_abbrev  0x000006ff       0x52 pikminS1.o
+ .debug_abbrev  0x00000751       0x49 pikminSplash2.o
+ .debug_abbrev  0x0000079a      0x101 sprite.o
+ .debug_abbrev  0x0000089b       0x52 test.o
+ .debug_abbrev  0x000008ed       0x49 tmap.o
+ .debug_abbrev  0x00000936       0x49 up.o
+ .debug_abbrev  0x0000097f       0x29 video.o
+ .debug_abbrev  0x000009a8      0x12d world.o
+
+.debug_line     0x00000000      0xf50
+ *(.debug_line)
+ .debug_line    0x00000000       0x52 blend.o
+ .debug_line    0x00000052       0x63 dma.o
+ .debug_line    0x000000b5       0x54 endGame.o
+ .debug_line    0x00000109       0xa8 gametable.o
+ .debug_line    0x000001b1       0x68 input.o
+ .debug_line    0x00000219       0x53 level1.o
+ .debug_line    0x0000026c       0x54 level1a.o
+ .debug_line    0x000002c0      0x749 main.o
+ .debug_line    0x00000a09       0x53 marble.o
+ .debug_line    0x00000a5c       0x53 olipik.o
+ .debug_line    0x00000aaf       0xb6 pathfinding.o
+ .debug_line    0x00000b65       0x55 pikminS1.o
+ .debug_line    0x00000bba       0x5a pikminSplash2.o
+ .debug_line    0x00000c14       0xbf sprite.o
+ .debug_line    0x00000cd3       0x51 test.o
+ .debug_line    0x00000d24       0x51 tmap.o
+ .debug_line    0x00000d75       0x4f up.o
+ .debug_line    0x00000dc4       0x62 video.o
+ .debug_line    0x00000e26      0x12a world.o
+
+.debug_frame    0x00000000      0x624
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x28 dma.o
+ .debug_frame   0x00000028       0x28 gametable.o
+ .debug_frame   0x00000050       0x50 input.o
+ .debug_frame   0x000000a0      0x39c main.o
+ .debug_frame   0x0000043c       0x3c pathfinding.o
+ .debug_frame   0x00000478       0x90 sprite.o
+ .debug_frame   0x00000508       0x28 video.o
+ .debug_frame   0x00000530       0xf4 world.o
+
+.debug_str      0x00000000      0xbe1
+ *(.debug_str)
+ .debug_str     0x00000000       0xa5 blend.o
+                                 0xb2 (size before relaxing)
+ .debug_str     0x000000a5       0x63 dma.o
+                                 0xbc (size before relaxing)
+ .debug_str     0x00000108       0x42 endGame.o
+                                 0xae (size before relaxing)
+ .debug_str     0x0000014a       0x75 gametable.o
+                                 0xc1 (size before relaxing)
+ .debug_str     0x000001bf       0x6e input.o
+                                 0xcd (size before relaxing)
+ .debug_str     0x0000022d       0x53 level1.o
+                                 0xbf (size before relaxing)
+ .debug_str     0x00000280       0x57 level1a.o
+                                 0xc3 (size before relaxing)
+ .debug_str     0x000002d7      0x576 main.o
+                                0x65e (size before relaxing)
+ .debug_str     0x0000084d       0x53 marble.o
+                                 0xbf (size before relaxing)
+ .debug_str     0x000008a0       0x33 olipik.o
+                                 0xb5 (size before relaxing)
+ .debug_str     0x000008d3       0x56 pathfinding.o
+                                 0xa8 (size before relaxing)
+ .debug_str     0x00000929       0x4f pikminS1.o
+                                 0xbb (size before relaxing)
+ .debug_str     0x00000978       0x3a pikminSplash2.o
+                                 0xba (size before relaxing)
+ .debug_str     0x000009b2       0x87 sprite.o
+                                0x1cb (size before relaxing)
+ .debug_str     0x00000a39       0x43 test.o
+                                 0xaf (size before relaxing)
+ .debug_str     0x00000a7c       0x31 tmap.o
+                                 0xa8 (size before relaxing)
+ .debug_str     0x00000aad       0x2f up.o
+                                 0x96 (size before relaxing)
+ .debug_str     0x00000adc       0x40 video.o
+                                 0x8c (size before relaxing)
+ .debug_str     0x00000b1c       0xc5 world.o
+                                0x217 (size before relaxing)
+
+.debug_loc      0x00000000     0x130f
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x45 dma.o
+ .debug_loc     0x00000045       0x1f gametable.o
+ .debug_loc     0x00000064      0xc76 main.o
+ .debug_loc     0x00000cda       0x99 pathfinding.o
+ .debug_loc     0x00000d73      0x116 sprite.o
+ .debug_loc     0x00000e89       0x1f video.o
+ .debug_loc     0x00000ea8      0x467 world.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x10
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x20 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+ .ARM.attributes
+                0x00000020       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+ .ARM.attributes
+                0x0000003e       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+ .ARM.attributes
+                0x0000005c       0x10 Dismiss.o
+ .ARM.attributes
+                0x0000006c       0x10 Pikmin2.o
+ .ARM.attributes
+                0x0000007c       0x10 Throw.o
+ .ARM.attributes
+                0x0000008c       0x10 Whistle.o
+ .ARM.attributes
+                0x0000009c       0x10 end.o
+ .ARM.attributes
+                0x000000ac       0x10 forest.o
+ .ARM.attributes
+                0x000000bc       0x10 pik22.o
+ .ARM.attributes
+                0x000000cc       0x10 piklvl01.o
+ .ARM.attributes
+                0x000000dc       0x1c blend.o
+ .ARM.attributes
+                0x000000f8       0x1e dma.o
+ .ARM.attributes
+                0x00000116       0x1c endGame.o
+ .ARM.attributes
+                0x00000132       0x1e gametable.o
+ .ARM.attributes
+                0x00000150       0x1e input.o
+ .ARM.attributes
+                0x0000016e       0x1c level1.o
+ .ARM.attributes
+                0x0000018a       0x1c level1a.o
+ .ARM.attributes
+                0x000001a6       0x1e main.o
+ .ARM.attributes
+                0x000001c4       0x1c marble.o
+ .ARM.attributes
+                0x000001e0       0x1c olipik.o
+ .ARM.attributes
+                0x000001fc       0x1e pathfinding.o
+ .ARM.attributes
+                0x0000021a       0x1c pikminS1.o
+ .ARM.attributes
+                0x00000236       0x1c pikminSplash2.o
+ .ARM.attributes
+                0x00000252       0x1e sprite.o
+ .ARM.attributes
+                0x00000270       0x1c test.o
+ .ARM.attributes
+                0x0000028c       0x1c tmap.o
+ .ARM.attributes
+                0x000002a8       0x1c up.o
+ .ARM.attributes
+                0x000002c4       0x1e video.o
+ .ARM.attributes
+                0x000002e2       0x1e world.o
+ .ARM.attributes
+                0x00000300       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000031e       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000033c       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_call_via_rX.o)
+ .ARM.attributes
+                0x0000035a       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_addsubdf3.o)
+ .ARM.attributes
+                0x00000378       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a(_fixdfsi.o)
+ .ARM.attributes
+                0x00000396       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-init.o)
+ .ARM.attributes
+                0x000003b4       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000003d2       0x1c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+ .ARM.attributes
+                0x000003ee       0x1c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+ .ARM.attributes
+                0x0000040a       0x1e c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb/gba_crt0.o
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crti.o
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtbegin.o
+LOAD Dismiss.o
+LOAD Pikmin2.o
+LOAD Throw.o
+LOAD Whistle.o
+LOAD end.o
+LOAD forest.o
+LOAD pik22.o
+LOAD piklvl01.o
+LOAD blend.o
+LOAD dma.o
+LOAD endGame.o
+LOAD gametable.o
+LOAD input.o
+LOAD level1.o
+LOAD level1a.o
+LOAD main.o
+LOAD marble.o
+LOAD olipik.o
+LOAD pathfinding.o
+LOAD pikminS1.o
+LOAD pikminSplash2.o
+LOAD sprite.o
+LOAD test.o
+LOAD tmap.o
+LOAD up.o
+LOAD video.o
+LOAD world.o
+START GROUP
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb\libgcc.a
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libg.a
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libc.a
+END GROUP
+START GROUP
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libsysbase.a
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/../../../../arm-eabi/lib/thumb\libc.a
+END GROUP
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtend.o
+LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-eabi/4.1.2/thumb/crtn.o
+OUTPUT(i:/cs2261/pikminbuilds/spritev0.01/spritev0.01.elf elf32-littlearm)
+
+.debug_ranges   0x00000000       0xe0
+ .debug_ranges  0x00000000       0xe0 main.o

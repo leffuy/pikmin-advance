@@ -1,0 +1,1 @@
+level1a.o: i:/cs2261/pikminbuilds/spritev0.01/source/level1a.c
